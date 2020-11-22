@@ -1,0 +1,33 @@
+.first-nav {
+    grid-area: 1 / 7 / 2 / 10;
+    @include navigation;
+
+    @include response(xl) {
+        grid-area: 1 / 6 / 2 / 10;
+    }
+
+    @include response(lg) {
+        grid-area: 1 / 5 / 2 / 10;
+    }
+
+    @include response(md) {
+        grid-area: 1 / 4 / 2 / 10;
+    }
+
+    @include response(sm) {
+        grid-area: 1 / 2 / 2 / 10;
+    }
+}
+
+.second-nav {
+    grid-area: 3 / 3 / 4 / 8;
+    @include navigation;
+
+    @include response(lg) {
+        grid-area: 3 / 2 / 4 / 9;
+    }
+
+    @include response(md) {
+        grid-area: 3 / 1 / 4 / -1;
+    }
+}
